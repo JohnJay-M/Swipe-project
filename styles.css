@@ -26,7 +26,7 @@
     --spacing-lg: 32px;
     --spacing-xl: 64px;
 
-    --standard-width: 1144px;
+    --standard-width: 100%;
 
     /* color */
     --purple-1: #6962f7;
@@ -292,6 +292,11 @@ main {
     color: var(--purple-2);
 }
 
+.hero {
+    max-width: 1144px;
+    margin: 0 auto;
+}
+
 .hero p {
     max-width: 480px;
 }
@@ -307,6 +312,11 @@ main {
 }
 
 /* Partnes Section */
+
+.partners-section {
+    max-width: 1144px;
+    margin: 0 auto;
+}
 
 .partners-grid {
     width: 100%;
@@ -326,6 +336,8 @@ main {
 
 .unified-platform-section {
     padding: var(--spacing-xl) 0;
+    max-width: 1144px;
+    margin: 0 auto;
 }
 
 .unified-platform-section h2 {
@@ -347,6 +359,8 @@ margin: var(--spacing-md) 0;
 /* Graphic Grid */
 .graphic-section {
     padding-top: var(--spacing-xl);
+    max-width: 1144px;
+    margin: 0 auto;
 }
 
 .graphic-grid {
@@ -384,9 +398,15 @@ margin: var(--spacing-md) 0;
 
 /* Integration Section */
 
-.integration-section {
+.integration-section-wrapper {
     color: var(--text-light);
     background-color: var(--primary-accent);
+    width: 100%;
+}
+
+.integration-section {
+    max-width: 1144px;
+    margin: 0 auto;
 }
 
 .integration-section .card-container {
