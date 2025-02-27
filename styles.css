@@ -26,7 +26,7 @@
     --spacing-lg: 32px;
     --spacing-xl: 64px;
 
-    --standard-width: 100%;
+    --standard-width: 1144px;
 
     /* color */
     --purple-1: #6962f7;
@@ -132,11 +132,10 @@ a:hover {
 /* Layout Styles */
 
 main {
-    max-width: var(--standard-width);
+    width: 100%;
 }
 
 .section-container {
-    width: 100%;
     max-width: var(--standard-width);
 }
 
@@ -293,8 +292,9 @@ main {
 }
 
 .hero {
-    max-width: 1144px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .hero p {
@@ -314,8 +314,9 @@ main {
 /* Partnes Section */
 
 .partners-section {
-    max-width: 1144px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .partners-grid {
@@ -328,16 +329,17 @@ main {
 }
 
 .partners-grid img {
-    height: 60px;
+    height: 80px;
     place-self: center;
 }
 
 /* Unified Platform */
 
 .unified-platform-section {
-    padding: var(--spacing-xl) 0;
-    max-width: 1144px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: var(--spacing-xl) 0;
 }
 
 .unified-platform-section h2 {
@@ -359,8 +361,9 @@ margin: var(--spacing-md) 0;
 /* Graphic Grid */
 .graphic-section {
     padding-top: var(--spacing-xl);
-    max-width: 1144px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .graphic-grid {
@@ -398,15 +401,12 @@ margin: var(--spacing-md) 0;
 
 /* Integration Section */
 
-.integration-section-wrapper {
-    color: var(--text-light);
-    background-color: var(--primary-accent);
-    width: 100%;
-}
-
 .integration-section {
-    max-width: 1144px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-accent);
+    color: white;
 }
 
 .integration-section .card-container {
@@ -466,6 +466,12 @@ margin: var(--spacing-md) 0;
 
 /* WHY SECTION */
 
+.why-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .why-section .subtitle {
     padding: var(--spacing-xl) 0 0 0;
 }
@@ -495,18 +501,28 @@ margin: var(--spacing-md) 0;
 
 /* GLOBAL BUSINESS SECTION */
 
-.global-business-section {
-    padding: var(--spacing-xl) 0 0 0;
+.global-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: var(--primary-accent);
     color: var(--text-light);
 }
 
-.global-business-section .col-right img {
+.global-wrapper {
+    
+}
+
+.global-section .section-container {
+   margin: 0 auto;
+}
+
+.global-section .col-right img {
     width: 680px;
     transform: translateX(-80px);
 }
 
-.global-business-section h2 {
+.global-section h2 {
     font-family: var(--heading-font);
     font-weight: 500px;
     font-size: var(--h3-size);
@@ -515,43 +531,45 @@ margin: var(--spacing-md) 0;
     line-height: 48px;
 }
 
-.global-business-section p {
+.global-section p {
     /* font-size: 14px; */
     width: 90%;
     line-height: 22px;
 }
 
-.global-business-section .card-container {
+.global-section .card-container {
+    width: 100%;
     display: flex;
+    justify-content: center;
     transform: translateY(-80px);
 }
 
-.global-business-section .card-container p {
+.global-section .card-container p {
     font-size: 14px;
     line-height: 18px;
     color: var(--text-grey);
 }
 
-.global-business-section .col-left a  {
+.global-section .col-left a  {
     color: var(--blue-1);
 }
 
-.global-business-section .col-left a:hover  {
+.global-section .col-left a:hover  {
     color: var(--text-light);
 }
 
-.global-business-section .card {
+.global-section .card {
     width: 20%;
     padding: 0 var(--spacing-sm) 0 0;
     margin: 0 var(--spacing-md) 0 0;
     box-sizing: border-box;
 }
 
-.global-business-section .subtitle {
+.global-section .subtitle {
     color: var(--blue-1);
 }
 
-.global-business-section .card h3 {
+.global-section .card h3 {
     border-left: 1px solid var(--blue-1);
     margin: 0 0 var(--spacing-md) 0;
     padding: 0 0 0 var(--spacing-sm);
