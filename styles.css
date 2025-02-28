@@ -137,10 +137,6 @@ a:hover {
 
 /* Layout Styles */
 
-main {
-    width: 100%;
-}
-
 .section-container {
     max-width: var(--standard-width);
 }
@@ -246,6 +242,10 @@ main {
 transform: translateX(4px);
 }
 
+.icon {
+    width: 20px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -284,7 +284,8 @@ transform: translateX(4px);
 
 /* Hero styles */
 main {
-    margin: var(--spacing-xl) 0;
+    margin: var(--spacing-xl) 0 0 0;
+    width: 100%;
 }
 
 .button-container {
@@ -710,25 +711,21 @@ margin: var(--spacing-md) 0;
 
 .started-section .secondary-button {
     color: var(--purple-2);
+    padding: 0;
 }
 
-.started-section .secondary-button:hover {
-    color: var(--primary-accent);
-}
-
-.started-section .col-right img {
+.started-section .col-right .icon {
     width: 50px;
     margin: 0 0 var(--spacing-sm) 0;
 }
 
 .started-section .col-right .left {
-    width: 50;
-    padding-right: 20px;
+    width: 50%;
 }
 
 .started-section .col-right .right {
     width: 50%;
-    padding-right: 20px;
+    padding-left: 24px;
 }
 
 .started-section .col-right .left p {
@@ -737,4 +734,60 @@ margin: var(--spacing-md) 0;
 
 .started-section .col-right .right p {
     color: var(--text-grey);
+}
+
+/* FOOTER SECTION */
+
+.footer-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--spacing-xl) * 2) 0;
+  background-color: var(--bg-light);
+}
+
+.footer-wrapper {
+ width: var(--standard-width)
+}
+
+.footer-section .card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section .country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-section .language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section .country img {
+    height: 24px;
+    margin-right: var(--spacing-sm);
+}
+
+.footer-section .language img {
+    height: 24px;
+    margin-right: var(--spacing-sm);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    line-height: 32px;
+    }
+
+#footer-logo {
+    padding-bottom: var(--spacing-md);
+}
+
+.footer-section a {
+    color: var(--text-dark);
 }
