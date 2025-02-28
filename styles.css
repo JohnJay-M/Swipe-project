@@ -42,10 +42,7 @@
     --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
     --primary-gradient: linear-gradient (
         101.33deg,
-        #08209a 0.76%,
-        #6563ff 33.33%,
-        #36c5f0 76.92%
-        #83e2ff 96.96%
+        #08209a 0.76%, #6563ff 33.33%, #36c5f0 76.92% #83e2ff 96.96%
     );
 }
 
@@ -593,6 +590,11 @@ margin: var(--spacing-md) 0;
     padding: calc(var(--spacing-xl) * 2) 0;
 }
 
+.virtual-event-section .col-left {
+    height: 446px;
+    padding: 0 var(--spacing-xl) 0 0;
+}
+
 .virtual-event-section .primary-button {
     background-color: var(--purple-1);
     margin: var(--spacing-md) 0;
@@ -618,15 +620,121 @@ margin: var(--spacing-md) 0;
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
 
 .swipe-session-card .card-top::before {
-    background-color: var(--purple-1);
+    background: linear-gradient(101.33deg, #08209a 0.76%, #6563ff 33.33%, #36c5f0 76.92%);
     content: "";
     width: 100%;
     height: 150%;
     position: absolute;
     top: -40%;
     transform: skewY(-5deg);
+    z-index: 1;
+}
+
+.card-top img {
+    z-index: 2;
+    width: 338px;
+}
+
+.virtual-event-section .avatars {
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 10%;
+}
+
+.virtual-event-section .avatars img {
+    width: 80px;
+}
+
+.virtual-event-section .avatars img:nth-of-type(2) {
+    position: absolute;
+    left: 55px;
+}
+
+.virtual-event-section .card-bottom {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: var(--spacing-xl);
+}
+
+.virtual-event-section .card-bottom .subtitle {
+    margin: var(--spacing-lg) 0 0 0;
+}
+
+.virtual-event-section h2 {
+    font-size: var(--h3-size);
+}
+
+.virtual-event-section .card-bottom .secondary-text {
+    color: var(--text-dark);
+    width: 50%;
+    font-weight: 700;
+}
+
+/* GETTING STARTED SECTION */
+
+.started-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: calc(var(--spacing-xl) * 2) 0;
+}
+
+.started-section h2 {
+    font-size: var(--h3-size);
+}
+
+.started-section .started-text {
+    width: 460px;
+    font-weight: 600;
+    margin: 0 0 var(--spacing-lg) 0;
+}
+
+.started-section .col-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.started-section .primary-button {
+    background-color: var(--purple-1);
+}
+
+.started-section .primary-button:hover {
+    background-color: var(--primary-accent);
+}
+
+
+.started-section .secondary-button {
+    color: var(--purple-2);
+}
+
+.started-section .secondary-button:hover {
+    color: var(--primary-accent);
+}
+
+.started-section .col-right img {
+    width: 50px;
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.started-section .col-right .left {
+    width: 50;
+    padding-right: 20px;
+}
+
+.started-section .col-right .right {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.started-section .col-right .left p {
+    color: var(--text-grey);
+}
+
+.started-section .col-right .right p {
+    color: var(--text-grey);
 }
