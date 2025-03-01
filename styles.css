@@ -4,7 +4,7 @@
     --text-grey: #adbdcc;
     --body-font: "Roboto", sans-serif;
     --heading-font: "Anek Telugu", sans-serif;
-    --h1-size: 94px;
+    --h1-size: 88px;
     --h1-height: 108px;
     --h2-size: 50px;
     --h2-height: 75px;
@@ -254,7 +254,8 @@ transform: translateX(4px);
     align-items: center;
     width: 100%;
     max-width: var(--standard-width);
-    padding: 0 var(--spacing-md);
+    padding:  0 var(--spacing-md);
+    
 }
 
 .menu {
@@ -282,7 +283,25 @@ transform: translateX(4px);
     background-color: rgba(250, 250, 250, 0.5);
 }
 
+/* ANIMATED GRADIENT */
+
+#gradient-canvas {
+    background-color: purple;
+    width: 200%;
+    height: 970px;
+    transform: rotate(-10deg);
+    position: absolute;
+    top: -600px;
+    left: -50%;
+    z-index: -1;
+    --gradient-color-1: #ef008f;
+    --gradient-color-2: #6ec3f4;
+    --gradient-color-3: #7038ff;
+    --gradient-color-4: #ffba27;
+}
+
 /* Hero styles */
+
 main {
     margin: var(--spacing-xl) 0 0 0;
     width: 100%;
@@ -298,10 +317,13 @@ main {
     color: var(--purple-2);
 }
 
+/* HERO SECTION */
 .hero {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-md);
 }
 
 .hero p {
@@ -318,13 +340,17 @@ main {
     transform: translate(38px, -32px);
 }
 
+.hero .col-left .button-container {
+    margin: var(--spacing-md) 0 0 0;
+}
+
 /* Partnes Section */
 
 .partners-section {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: calc(var(--spacing-xl) * 2) 0;
+    padding: var(--spacing-md) 0 calc(var(--spacing-md) * 2) 0;
 }
 
 .partners-grid {
@@ -657,6 +683,7 @@ margin: var(--spacing-md) 0;
     height: 446px;
     box-shadow: var(--standard-box-shadow);
     border-radius: 20px;
+    /* position: relative; */
     overflow: hidden;
 }
 
