@@ -55,7 +55,7 @@ body {
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-    padding: var(--spacing-sm);
+    /* padding: var(--spacing-sm); */
     background-color: var(--bg-white);
     display: flex;
     flex-direction: column;
@@ -889,6 +889,75 @@ margin: var(--spacing-md) 0;
 
 }
 
+@media only screen and (max-width: 730px) {
+
+    .integration-section {
+        padding: 80px 0;
+    }
+
+    .integration-section::before {
+        height: 900px ;
+    }
+
+    .why-section {
+        padding: 50px 0 200px 0;
+    }
+
+    .why-section .card-container {
+        flex-wrap: wrap;
+    }
+
+    .why-section .card-container .card {
+        width: 47%;
+    }
+
+    .global-section {
+        padding: 30px 0 0 0;
+    }
+
+    .global-section::before {
+       height: 900px;
+    }
+
+    .global-section .card-container {
+        margin: 30px 0 0 0;
+        transform: translateY(-150px);
+    }
+
+    .global-section .section-container .col-left {
+        width: 80%;
+    }
+
+    .global-section .section-container .col-right {
+        width: 20%;
+    }
+
+    .integration-section .col-left {
+        width: 80%;
+    }
+
+    .integration-section .col-right {
+        width: 20%;
+    }
+
+    .integration-section .card-container .card {
+        width: 100%;
+    }
+
+    .virtual-event-section {
+        padding: 50px 0;
+    }
+
+    .started-section {
+        padding: 88px 0;
+    }
+
+    .started-section .section-container {
+        flex-direction: column;
+    }
+
+}
+
 /* TABLET SIZE */
 
 @media only screen and (max-width: 768px) {
@@ -1050,12 +1119,13 @@ margin: var(--spacing-md) 0;
     }
 
     .why-section .card-container {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .why-section .card {
-        width: 100%;
-        padding: 0;
+        width: 40%;
+        padding: 0 20px;
         margin: 20px 0 0 0;
     }
 
@@ -1063,6 +1133,7 @@ margin: var(--spacing-md) 0;
         padding-top: 28px;
         padding-bottom: 0;
     }
+    
 
     .global-section .section-container {
         height: 600px;
@@ -1160,13 +1231,20 @@ margin: var(--spacing-md) 0;
    
     .footer-section .card-container {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        width: 40%;
+        flex-direction: row;
+        flex-wrap: wrap;        
+        width: 100%
     }
 
     .footer-section .card-container .card {
+        width: 44%;
+        margin: 0 10px 0 0;
+    }
+
+    html, body {
         width: 100%;
+        position: relative;
+        overflow-x: hidden;
     }
 
 }
