@@ -564,30 +564,17 @@ margin: var(--spacing-md) 0;
     position: relative;
 }
 
-.global-section::before {
-    content: "";
-    width: 100%;
-    height: 1200px;
-    background-color: var(--primary-accent);
-    transform: skewY(-10deg);
-    position: absolute;
-    top: -100px;
-    z-index: -2;
-}
-
-
-.global-wrapper {
-    width:var(--standard-width);
-}
-
-.global-section .section-container {
-   margin: 0 auto;
-}
-
 .global-section .col-right img {
     width: 680px;
     transform: translateX(-80px);
     opacity: 0.2;
+}
+
+.global-section .card-container {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    transform: translateY(-80px);
 }
 
 .global-section h2 {
@@ -604,17 +591,28 @@ margin: var(--spacing-md) 0;
     line-height: 22px;
 }
 
-.global-section .card-container {
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    transform: translateY(-80px);
-}
-
 .global-section .card-container p {
     font-size: 14px;
     line-height: 18px;
     color: var(--text-grey);
+}
+
+.global-section .card {
+    width: 20%;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+    box-sizing: border-box;
+}
+
+.global-section::before {
+    content: "";
+    width: 100%;
+    height: 1200px;
+    background-color: var(--primary-accent);
+    transform: skewY(-10deg);
+    position: absolute;
+    top: -100px;
+    z-index: -2;
 }
 
 .global-section .col-left a  {
@@ -623,13 +621,6 @@ margin: var(--spacing-md) 0;
 
 .global-section .col-left a:hover  {
     color: var(--text-light);
-}
-
-.global-section .card {
-    width: 20%;
-    padding: 0 var(--spacing-sm) 0 0;
-    margin: 0 var(--spacing-md) 0 0;
-    box-sizing: border-box;
 }
 
 .global-section .subtitle {
@@ -642,6 +633,7 @@ margin: var(--spacing-md) 0;
     padding: 0 0 0 var(--spacing-sm);
     height: 26px;
 }
+
 
 /* VIRTUAL EVENT SECTION */
 
@@ -890,6 +882,14 @@ margin: var(--spacing-md) 0;
     .partners-grid img {
         width: 100%;
         height: auto;
+    }
+
+    .global-section .two-column {
+        padding: 0 var(--spacing-md);
+    }
+
+    .global-section .card-container {
+        padding: 0 var(--spacing-md);
     }
 
 }
