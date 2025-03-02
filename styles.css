@@ -285,7 +285,6 @@ transform: translateX(4px);
 /* ANIMATED GRADIENT */
 
 #gradient-canvas {
-    background-color: purple;
     width: 200%;
     height: 970px;
     transform: rotate(-10deg);
@@ -872,6 +871,8 @@ margin: var(--spacing-md) 0;
 }
 
 
+/* 1144px SIZE */
+
 @media only screen and (max-width: 1144px) {
     .section-container {
         padding: 0 var(--spacing-md);
@@ -908,18 +909,59 @@ margin: var(--spacing-md) 0;
         --h3-height: 38px;
     }
 
-    .partners-grid {
-        /* grid-template-columns: 1fr 1fr; */
+    .unified-platform-section {
+        padding: 28px 0;
     }
+
+    .unified-platform-section h2 {
+        font-size: var(--h3-size);
+        width: 100%;
+        margin-bottom: var(--spacing-sm);
+        line-height: 38px;
+    }
+
 }
 
 /* MOBILE SIZE */
 
 @media only screen and (max-width: 550px) {
+
+    .hero {
+        padding-top: 10px;
+    }
+
     .hero h1 {
         font-size: 34px;
         line-height: 38px;
+        width: 400px;
     } 
+    
+    .hero .section-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hero .section-container .col-left {
+        width: 100%;
+        padding-bottom: 32px;
+    }
+
+    .hero .hero-phone-container {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .hero .hero-phone {
+        transform: none;
+    }
+
+    .button-container button:nth-last-of-type(1) {
+        margin: 0 0 0 var(--spacing-md);
+        color: var(--bg-white);
+    }
 
     :root {
         --h2-size: 24px;
@@ -929,5 +971,100 @@ margin: var(--spacing-md) 0;
     .partners-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .unified-platform-section {
+        padding: 16px 0;
+    }
+
+    .unified-platform-section h2 {
+        width: 100%;
+        margin-bottom: var(--spacing-sm);
+        line-height: 38px;
+    }
+
+    .unified-platform-section .two-column {
+        flex-direction: column;
+    }
+
+    .unified-platform-section .col-left {
+        width: 100%;
+    }
+
+    .unified-platform-section .col-right  {
+        width: 100%;
+        padding: 0;
+    }
+
+    .graphic-section .graphic-grid {
+        grid-template-areas:
+        "card"
+        "slack"
+        "phone" 
+        "dash";
+    }
+
+    .integration-section {
+        padding: 28px 0;
+    }
+
+    .integration-section .two-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .integration-section .col-left {
+        width: 100%;
+        padding: 0;
+    }
+
+    .integration-section h3 {
+        width: 190px;
+        line-height: 28px;
+        padding: 18px 0;
+    }
+
+    .integration-section .col-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .integration-section .col-right img {
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .why-section {
+        padding-top: 48px;
+        padding-bottom: 200px;
+    }
+
+    .why-section h2 {
+        margin: 0 0 32px;
+        line-height: 42px;
+    }
+
+    .why-section .card img {
+        margin: 0 0 20px;
+    }
+
+    .why-section .card h3 {
+        line-height: 28px;
+    }
+
+    .why-section .card-container {
+        flex-direction: column;
+    }
+
+    .why-section .card {
+        width: 100%;
+        padding: 0;
+        margin: 20px 0 0 0;
+    }
+
+
+
 
 }
